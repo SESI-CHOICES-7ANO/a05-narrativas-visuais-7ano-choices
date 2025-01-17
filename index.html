@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Storytelling e Transmídia" />
+    <meta name="author" content="SESI" />
+    <title>Aula 05 | <i>Storytelling</i> e Transmídia</title>
+    <link rel="icon" type="image/png" href="src/img/core/Favicon.png" />
+
+    <!-- Fonts Gamay Editorial -->
+    <link rel="stylesheet" href="https://use.typekit.net/gfu5jar.css" />
+
+    <!--Import Google Icon Font-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
+    />
+
+    <!-- CSS -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="src/css/main.css"
+      media="screen"
+    />
+
+    <!-- Vue DEV MODE -->
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+
+    <!-- Vue PROD MODE -->
+    <script
+      rel="preconnect"
+      src="https://unpkg.com/vue@3/dist/vue.global.prod.js"
+    ></script>
+
+    <!-- Scorm JS -->
+    <script src="src/js/scorm/APIWrapper.js"></script>
+    <script src="src/js/scorm/SCOFunctions.js"></script>
+    <script src="src/js/scorm/scorm-app.js"></script>
+
+    <link rel="preload" href="src/img/Hero-m.webp" as="image" />
+    <link rel="preload" href="src/img/Hero-s.webp" as="image" />
+
+    <!-- Materialize JS -->
+    <script
+      type="text/javascript"
+      src="src/js/materialize/materialize.js"
+      defer
+    ></script>
+    <!-- AOS JS -->
+    <script
+      type="text/javascript"
+      src="src/js/aos-master/aos.js"
+      defer
+    ></script>
+
+    <!-- App.js JS customizado aqui -->
+    <script type="module" src="src/js/app.js"></script>
+
+    <!-- AOS Animation -->
+    <link type="text/css" rel="stylesheet" href="src/css/aos.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- loading ---------------------------------- -->
+      <div id="loading">
+        <div class="spinner"></div>
+      </div>
+      <div id="content">
+        <!-- Sidebar ---------------------------------- -->
+        <!-- <sidebar></sidebar> -->
+
+        <!-- Navbar ---------------------------------- -->
+        <navbar></navbar>
+
+        <!-- Hero Banner ----------------------------------->
+        <hero><i>Storytelling</i> e Transmídia</hero>
+
+        <!-- Primeiro Conteúdo ----------------------------->
+        <div id="aula">
+          <div class="container py-80">
+            <div class="container--medium center-align">
+              <h2 class="purple-text center-align mt-24" data-aos="zoom-in">
+                👉 Nesta aula, vamos conversar sobre:
+              </h2>
+              <ul class="center-align" style="list-style: none; padding: 0">
+                <li>
+                  <p style="margin-top: -12px">&bull; Transmídia;</p>
+                </li>
+                <li>
+                  <p style="margin-top: -12px">
+                    &bull; Transformações da transmídia;
+                  </p>
+                </li>
+                <li>
+                  <p style="margin-top: -12px">
+                    &bull; Papel da internet na transmídia.
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <img-side-card
+              class="py-60 "
+              src="src/img/Rectangle 163.webp"
+              alt="Choices"
+              card_class="purple-blue-bg"
+            >
+              <!-- Conteúdo textual -->
+              <div class="py-24 white-text">
+                <p class="body1">
+                  <b>Uma nova abordagem</b>
+                </p>
+                <br />
+
+                <p>E aí? Tudo tranquilo?</p>
+                <br />
+                <p>
+                  A aula de hoje é sobre TRANSMÍDIA e as redes. Preparada(o)
+                  para começar? Então pega seu caderno, o celular, um vídeo, ou
+                  quem sabe um desenho? Opa! Muitas opções!
+                </p>
+              </div>
+            </img-side-card>
+          </div>
+        </div>
+
+        <div
+          id="intro"
+          class="py-80 pt-144 white-text"
+          style="background-color: #3d4d58"
+        >
+          <div class="container--780">
+            <div class="row">
+              <div class="col m6 s12 flex--align-center">
+                <div>
+                  <h3 data-aos="fade-up">Uma história em muitos formatos</h3>
+                  <p>
+                    A principal característica das transmídias são seus muitos
+                    formatos usados para contar segmentos de uma mesma história.
+                  </p>
+                </div>
+              </div>
+              <div class="col m6 s12 flex--justify-center">
+                <img
+                  src="src/img/Group 204.webp"
+                  class="w100 m-w320"
+                  alt="Imagem da Choices"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <div class="row mt-40">
+              <div class="col m6 s12 flex--justify-center">
+                <img
+                  src="src/img/Group 222.webp"
+                  class="w100 m-w320"
+                  alt="Imagem da Choices"
+                  loading="lazy"
+                />
+              </div>
+              <div class="col m6 s12 flex--align-center">
+                <div>
+                  <h3 data-aos="fade-up">O que muda? 🤔</h3>
+                  <p>
+                    É comum que uma história possa existir em mais de um
+                    formato, por exemplo em quadrinhos, filmes, desenhos
+                    animados ou até mesmo livros.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-60">
+              <div class="col m6 s12">
+                <div class="card card--purple-shadow card--transparent">
+                  <div class="card-content">
+                    <div class="card-title">
+                      <p class="green-text">Adaptação</p>
+                    </div>
+                    <p>
+                      Quando uma mesma história passa de uma mídia para outra,
+                      chamamos isso de ADAPTAÇÃO.
+                    </p>
+                    <br />
+                    <p>
+                      Ou seja, temos a mesma história, que pode ser acompanhada
+                      em um livro ou em um filme. Mas continuará a ser a MESMA
+                      HISTÓRIA.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col m6 s12">
+                <div class="card card--purple-shadow card--transparent">
+                  <div class="card-content">
+                    <div class="card-title">
+                      <p class="green-text">Pedaços de histórias</p>
+                    </div>
+                    <p>
+                      Agora, quando múltiplos segmentos de uma história são
+                      contados em formatos de mídia distintos, que AGREGAM e
+                      ADICIONAM detalhes ou outras VERSÕES e INFORMAÇÕES sobre
+                      uma história que PARTILHA DE UM UNIVERSO EM COMUM,
+                      passamos a chamar tal fenômeno de TRANSMÍDIA.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="capa" class="py-80 flex--align-end">
+          <div class="container--780">
+            <h3 data-aos="fade-up" class="white-text">Precisa acompanhar isso tudo?</h3>
+          </div>
+        </div>
+
+        <section id="star" class="py-80 white-text bg-purple">
+          <div class="container--780">
+            <p class="body1">
+              A série <b>Star Wars</b> é um famoso exemplo citado para discutir
+              transmídia, pois aparece em filmes, livros, quadrinhos, desenhos
+              animados etc.
+            </p>
+
+            <div
+              class="mission-tag pr-24 pl-24 mt-40"
+              style="max-width: fit-content"
+            >
+              <img
+                src="src/img/mission.svg"
+                loading="lazy"
+                alt="ícone bandeira"
+              />
+              <p class="purple-text pt-4"><b>Missão 1</b></p>
+            </div>
+
+            <p>
+              Transmídias se tornaram amplamente populares nos últimos tempos.
+              Você já tinha ouvido esse termo?
+            </p>
+            <p>
+              E você acompanha alguma? Já sabia que a série que acompanha era
+              parte desse fenômeno?
+            </p>
+
+            <p><b>Pense e anote no caderno! ✍️</b></p>
+
+            <div class="row">
+              <div
+                class="col offset-m4 m8 s12 right-align flex--align-end flex--column"
+              >
+                <div
+                  class="mission-tag pr-24 pl-24 mt-40"
+                  style="max-width: fit-content"
+                >
+                  <img
+                    src="src/img/mission.svg"
+                    loading="lazy"
+                    alt="ícone bandeira"
+                  />
+                  <p class="purple-text pt-4"><b>Missão 2</b></p>
+                </div>
+                <p>
+                  Para reforçar os conceitos que vimos até aqui, dá uma olhada
+                  nesse vídeo sobre transmídia (ative as legendas automáticas em
+                  PT-BR, se não estiver familiarizado com o inglês):
+                </p>
+              </div>
+            </div>
+
+            <!-- VIDEO -->
+            <iframe
+              class="w100 img-rounded mb-60"
+              height="380"
+              src="https://www.youtube.com/embed/ylj74jPHafE?si=wqZFIithgbW9QjRh"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+
+            <question-checkbox></question-checkbox>
+
+            <!-- Você sabia 03 / sem imagem ----------------------------------->
+            <div class="card-03 card-03 pt-60 mt-60">
+              <div class="card-03--content-solo dark-gray-light-bg">
+                <p class="body1 green-text flex--align-center">
+                  <span class="emote-box">😮</span><b>Você sabia?</b>
+                </p>
+                <div class="flex--align-center flex--column-mobile">
+                  <img
+                    src="src/img/image 18.webp"
+                    alt="Imagem da Choices"
+                    class="w100 m-w90 mr-0-mobile mr-24"
+                    loading="lazy"
+                  />
+                  <p class="white-text">
+                    Quem inventou o termo “TRANSMÍDIA” para descrever essas
+                    narrativas que se desdobram em muitos formatos foi um
+                    pesquisador norte-americano chamado Henry Jenkins.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="transmidia" class="py-80">
+          <div class="container--780 pb-60">
+            <div class="row">
+              <div class="col m6 s12 flex--justify-center">
+                <img
+                  src="src/img/Group 194.webp"
+                  class="w100"
+                  alt="Imagem da Choices"
+                  loading="lazy"
+                />
+              </div>
+              <div class="col m6 s12 flex--align-center">
+                <div>
+                  <h3 data-aos="fade-up" class="purple-text">Transmídia e as redes sociais</h3>
+                  <p>
+                    Com o fenômeno praticamente generalizado das redes sociais,
+                    os formatos de transmídia migraram para ainda mais
+                    possibilidades, além das mídias físicas (como livros, HQs) e
+                    digitais (filmes, vídeos, séries).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="full-img mb-6 center-align img-rounded">
+            <div class="container--780">
+              <div class="box-attention box-attention--purple mb-40">
+                <p class="center-align purple-text">
+                  Nas redes com perfis, influenciadoras(es) e pessoas criando
+                  seu próprio conteúdo, as possibilidades de criação coletiva da
+                  transmídia se intensificam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="container--780">
+            <div class="row mt-80">
+              <div class="col m6 s12 flex--align-center">
+                <div>
+                  <h3 data-aos="fade-up" class="purple-text">
+                    Brincadeiras e integrações entre realidade e mundos virtuais
+                  </h3>
+                  <p>
+                    Além disso, a transmídia permitiu que pessoas passassem a
+                    “brincar” com as barreiras de ficção e realidade, expandindo
+                    parte da história para o cotidiano ou criando brincadeiras e
+                    jogos interativos do lado de fora das redes.
+                  </p>
+                </div>
+              </div>
+              <div class="col m6 s12 flex--justify-center">
+                <img
+                  src="src/img/Group 231.webp"
+                  class="w100 m-w320"
+                  alt="Imagem da Choices"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <p class="body1 purple-text">
+              <b>Responsabilidades e segurança 🔐</b>
+            </p>
+            <p>
+              Claro que, ao utilizarmos as redes e qualquer tipo de interações
+              que extrapolem e misturem a realidade e o virtual, devemos estar
+              muito atentas(os) para a segurança e jamais fornecermos dados
+              pessoais para estranhos!
+            </p>
+
+            <p class="body1 purple-text mt-40">
+              <b>Segurança na internet</b>
+            </p>
+            <p>
+              Você vai acompanhar ainda mais dicas de como navegar e se apropriar das redes de forma segura na aula sobre segurança na internet, mas já pode ir se cuidando desde já!
+            </p>
+
+            <!-- Você sabia 03 / sem imagem ----------------------------------->
+            <div class="card-03 card-03 pt-60">
+              <div class="card-03--content-solo dark-gray-light-bg">
+                <p class="body1 green-text flex--align-center">
+                  <span class="emote-box">😮</span><b>Você sabia?</b>
+                </p>
+                <div class="flex--align-center flex--column-mobile">
+                  <img
+                    src="src/img/pokemon.gif"
+                    alt="Imagem da Choices"
+                    class="w100 m-w140 mr-0-mobile mr-24 img-rounded"
+                    loading="lazy"
+                  />
+                  <p class="white-text">
+                    Um exemplo transmidiático bem popular é a franquia Pokémon!
+Ela conta com filmes, desenhos, jogos, realidade aumentada e muitas outras entradas midiáticas. Além do conteúdo gerado por fãs!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="voz" class="white-text bg-azul" style="line-height: 0">
+          <div class="container--780 py-80">
+            <div class="row">
+              <div class="col m6 s12 flex--justify-center">
+                <img
+                  src="src/img/Group 234.webp"
+                  class="w100 m-w350"
+                  alt="Imagem da Choices"
+                  loading="lazy"
+                />
+              </div>
+              <div class="col m6 s12 flex--align-center">
+                <div>
+                  <h3 data-aos="fade-up">A voz das comunidades</h3>
+                  <p>
+                    Além disso, a transmídia permitiu que pessoas passassem a
+                    “brincar” com as barreiras de ficção e realidade, expandindo
+                    parte da história para o cotidiano ou criando brincadeiras e
+                    jogos interativos do lado de fora das redes.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- collapsible 01 ----------------------------------->
+            <ul class="collapsible expansable mt-24 default-text">
+              <li>
+                <div class="collapsible-header" tabindex="0">
+                  <p><b>Criações coletivas</b></p>
+                </div>
+                <div class="collapsible-body">
+                  <p>
+                    ​ Nesse sentido, hoje em dia, jogos, séries, filmes,
+                    quadrinhos, livros etc. muitas vezes têm colaboração de
+                    comunidades que dão opiniões, críticas, sugestões ou até
+                    mesmo fazem demandas sobre suas histórias favoritas!
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header" tabindex="0">
+                  <p><b>O lado comercial</b></p>
+                </div>
+                <div class="collapsible-body">
+                  <p>
+                    ​ Claro que o uso de transmídia também não está aí apenas
+                    por ser divertido ou ajudar no engajamento. Ele tem um apelo
+                    comercial muito grande.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header" tabindex="0">
+                  <p><b>Imagine…</b></p>
+                </div>
+                <div class="collapsible-body">
+                  <p>
+                    por um momento que, em vez de acessar apenas um único filme
+                    ou adquirir um único jogo para acompanhar a TOTALIDADE de um
+                    narrativa, o público precise adquirir diferentes formatos de
+                    mídia.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- House ------------------------->
+          <div id="house2" style="line-height: 0">
+            <!-- divisor ----------------------------------->
+            <img
+              src="src/img/d3.webp"
+              style="margin-top: -3px"
+              alt="Divisor"
+              class="w100 mb-80"
+            />
+            <div class="container pt-40">
+              <div class="row py-184 py-96-mobile">
+                <div class="col m3 s12"></div>
+                <div class="col m6 s12">
+                  <h3
+                    class="green-text"
+                    style="margin-bottom: 40px"
+                    data-aos="zoom-in"
+                  >
+                    Diferentes públicos
+                  </h3>
+                  <p class="white-text">
+                    Isso vai permitir não apenas que se faça a pessoa comprar
+                    diferente produtos (ou serviços) mas também faz com que se
+                    torne possível alcançar um número muito maior de gente!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container--780 py-80">
+            <div class="container--780">
+              <p class="body1"><b>Como assim? </b></p>
+              <p>
+                Vamos refletir. Digamos que você seja muito fã de jogos, mas não
+                é tão sua praia ler quadrinhos.
+              </p>
+            </div>
+
+            <div class="box-attention box-attention--white my-40 default-text">
+              <div class="row my-12">
+                <div class="col m3 s12 flex--align-center flex--justify-center">
+                  <img
+                    class="img-circle"
+                    src="src/img/Ellipse 1.webp"
+                    alt="Choices"
+                    loading="lazy"
+                    style="max-width: 100px"
+                  />
+                </div>
+                <div class="col m9 s12">
+                  <p class="blue-text"><b>Quadrinhos</b></p>
+                  <p>
+                    Se saísse uma versão em quadrinhos de uma série de que você
+                    gosta, talvez você não ficasse tão interessado(a).
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="box-attention box-attention--white my-40 default-text">
+              <div class="row my-12">
+                <div class="col m3 s12 flex--align-center flex--justify-center">
+                  <img
+                    class="img-circle"
+                    src="src/img/Ellipse 1-1.webp"
+                    alt="Choices"
+                    loading="lazy"
+                    style="max-width: 100px"
+                  />
+                </div>
+                <div class="col m9 s12">
+                  <p class="blue-text"><b>Jogos</b></p>
+                  <p>
+                    Agora, se saísse uma parte dessa mesma história no formato
+                    de um jogo, você ia querer jogá-lo!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="my-80">
+              <p class="body1"><b> E se você quisesse saber mais? </b></p>
+              <p>
+                Legal! Você jogou o jogo todo, mas tem pedaços da história que
+                não foram contados por completo, então agora você está bem
+                curiosa(o) para saber esses detalhes da narrativa.
+              </p>
+
+              <div class="row">
+                <div class="col m6 s12">
+
+                  <ul class="collapsible collapsible--mission">
+                    <li class="">
+                      <div
+                        class="pulse collapsible-header waves-effect waves-light grow flex--justify-center flex--align-center"
+                        tabindex="0"
+                        style="background-image: none"
+                      >
+                      <p class="center-align">
+                        <b>Está tudo no quadrinho!</b>
+                      </p>
+                    </div>
+                      <div
+                        class="collapsible-body bg-purple"
+                        style="
+                          transition: max-height 300ms ease-out;
+                          max-height: 0px;
+                        "
+                      >
+                        <div class="py-40">
+                          <img
+                          class="circle"
+                          src="src/img/Ellipse 40.webp"
+                          alt="Choices"
+                          loading="lazy"
+                          style="display: block; margin: 0px auto"
+                        />
+                        <p class="pt-12">
+                          E você descobre que esses detalhes que você quer
+                          saber saíram todos na história do quadrinho!
+                        </p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+
+                
+                </div>
+                <div class="col m6 s12">
+
+                  <ul class="collapsible collapsible--mission">
+                    <li class="">
+                      <div
+                        class="pulse collapsible-header waves-effect waves-light grow flex--justify-center flex--align-center"
+                        tabindex="0"
+                        style="background-image: none"
+                      >
+                      <p class="center-align"><b>Vou ter que ler!</b></p>
+                    </div>
+                      <div
+                        class="collapsible-body bg-purple"
+                        style="
+                          transition: max-height 300ms ease-out;
+                          max-height: 0px;
+                        "
+                      >
+                        <div class="py-40">
+                          <img
+                          class="circle"
+                          src="src/img/Ellipse 40-1.webp"
+                          alt="Choices"
+                          loading="lazy"
+                          style="display: block; margin: 0px auto"
+                        />
+                          <p class="pt-12">
+                            Você corre para adquirir o quadrinho! Lê tudo e quem
+                            sabe ainda se dê conta de que quadrinhos podem ser
+                            interessantes também e passe a ler mais deles de
+                            agora em diante (além de jogar).
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+
+                
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col m6 s12 flex--justify-center">
+                <img
+                  src="src/img/Group 235.webp"
+                  class="w100 m-w340"
+                  alt="Imagem da Choices"
+                  loading="lazy"
+                />
+              </div>
+              <div class="col m6 s12 flex--align-center">
+                <div>
+                  <h3 data-aos="fade-up" class="purple-text">Muitas portas de entrada</h3>
+                  <p>
+                    Essa é a lógica da transmídia! <br />
+                    Uma história vai ter muitas PORTAS DE ENTRADA que atendem a
+                    pessoas diferentes. Então, se você for fã de HQs, talvez
+                    você comece por aí; se você curte jogos, talvez decida
+                    jogar, ou, se você é fã de séries, por que não começar daí?
+                    Ou talvez nada disso te atraia, mas você viu esses vídeos de
+                    dancinha no TikTok e descobriu que era uma referência à
+                    personagem da história!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div
+                class="mission-tag pr-24 pl-24 mt-60"
+                style="max-width: fit-content"
+              >
+                <img
+                  src="src/img/mission.svg"
+                  loading="lazy"
+                  alt="ícone bandeira"
+                />
+                <p class="purple-text pt-4"><b>Missão 3</b></p>
+              </div>
+              <p>
+                Eita! A galera é esperta para te convencer a acompanhar uma
+                história, hein!
+              </p>
+
+              <p>
+                Narrativas transmidiáticas não são criadas da noite para o dia,
+                então você provavelmente vai ter muito trabalho se tentar fazer
+                uma sozinha(o), mas você pode considerar se juntar com colegas
+                para criarem seus próprios universos de histórias em
+                multiformatos!
+              </p>
+
+              <p>
+                Que tipos de histórias você acredita que funcionam bem no
+                formato transmídia? Anote aí e discuta com colegas!
+              </p>
+            </div>
+          </div>
+
+          <!-- divisor ----------------------------------->
+          <img
+            src="src/img/dfinal.webp"
+            style="margin-bottom: -3px"
+            alt="Divisor"
+            class="w100 mt-80"
+          />
+        </section>
+
+        <section
+          id="finalizacao"
+          class="py-80"
+          style="background-color: #eff1f2"
+        >
+          <div class="container center-align">
+            <h3 data-aos="fade-up" class="purple-text">📍 Nesta aula, conversamos sobre:</h3>
+            <ul class="center-align" style="list-style: none; padding: 0">
+              <li>
+                <p style="margin-top: -12px">&bull; Transmídia;</p>
+              </li>
+              <li>
+                <p style="margin-top: -12px">
+                  &bull; Transformações da transmídia;
+                </p>
+              </li>
+              <li>
+                <p style="margin-top: -12px">
+                  &bull; Papel da internet na transmídia.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <div id="conluir-wrap" class="py-184">
+          <div class="container--580 center-align white-text mb-60">
+            <div class="flex--align-center flex--column">
+              <h3 data-aos="fade-up">Na próxima semana...</h3>
+              <p class="m-w400">
+                Vamos discutir mais um pouco sobre ciberespaço, metaverso e
+                mundos virtuais!
+              </p>
+            </div>
+          </div>
+          <!-- Concluir ---------------------------------->
+          <concluir></concluir>
+        </div>
+
+        <!-- Footer ---------------------------------- -->
+        <app-footer></app-footer>
+      </div>
+    </div>
+  </body>
+</html>
