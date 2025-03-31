@@ -1,61 +1,4 @@
-export default {
-  data() {
-    return {
-      orgaos: [
-        "Boca",
-        "Faringe",
-        "Esôfago",
-        "Estômago",
-        "Intestino delgado",
-        "Intestino grosso",
-      ],
-      respostaCorreta: [
-        {
-          orgao: "Boca",
-          resposta: { carboidrato: 1, proteina: 0, lipidio: 0 },
-        },
-        {
-          orgao: "Faringe",
-          resposta: { carboidrato: 0, proteina: 0, lipidio: 0 },
-        },
-        {
-          orgao: "Esôfago",
-          resposta: { carboidrato: 0, proteina: 0, lipidio: 0 },
-        },
-        {
-          orgao: "Estômago",
-          resposta: { carboidrato: 0, proteina: 1, lipidio: 0 },
-        },
-        {
-          orgao: "Intestino delgado",
-          resposta: { carboidrato: 1, proteina: 1, lipidio: 1 },
-        },
-        {
-          orgao: "Intestino grosso",
-          resposta: { carboidrato: 0, proteina: 0, lipidio: 0 },
-        },
-      ],
-    };
-  },
-  methods: {
-    marcar(event) {
-      if (event.target.innerHTML == "✅") {
-        event.target.innerHTML = "";
-      } else {
-        event.target.innerHTML = "✅";
-      }
-    },
-    pulseReview(number) {
-      
-      let element = document.querySelector('.content-reveal.'+number).querySelector('.scale-transition');
-      
-      element.classList.toggle("scale-in");
-    },
-  },
-
- 
-  template:  //html
-  `
+export default{data(){return{orgaos:["Boca","Faringe","Esôfago","Estômago","Intestino delgado","Intestino grosso"],respostaCorreta:[{orgao:"Boca",resposta:{carboidrato:1,proteina:0,lipidio:0}},{orgao:"Faringe",resposta:{carboidrato:0,proteina:0,lipidio:0}},{orgao:"Esôfago",resposta:{carboidrato:0,proteina:0,lipidio:0}},{orgao:"Estômago",resposta:{carboidrato:0,proteina:1,lipidio:0}},{orgao:"Intestino delgado",resposta:{carboidrato:1,proteina:1,lipidio:1}},{orgao:"Intestino grosso",resposta:{carboidrato:0,proteina:0,lipidio:0}}]}},methods:{marcar(t){"✅"==t.target.innerHTML?t.target.innerHTML="":t.target.innerHTML="✅"},pulseReview(t){document.querySelector(".content-reveal."+t).querySelector(".scale-transition").classList.toggle("scale-in")}},template:`
   <div class="question-matriz">
               <table class="mt-40">
                 <thead>
@@ -113,5 +56,4 @@ export default {
 
             </div>
 
-`,
-};
+`};

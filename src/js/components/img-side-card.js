@@ -1,12 +1,4 @@
-export default {
-    name: "ImgSideCard",
-    props:{
-      src: String,
-      alt: String,
-      card_class: String,
-    },
-    template: //html
-     `
+export default{name:"ImgSideCard",props:{src:String,alt:String,card_class:String},template:`
     <div class="img-side-card">
       <img
         class="img-rounded img--purple-shadow m-w540"
@@ -21,5 +13,4 @@ export default {
         </div>
       </div>
     </div>
-    `,
-  };
+    `};

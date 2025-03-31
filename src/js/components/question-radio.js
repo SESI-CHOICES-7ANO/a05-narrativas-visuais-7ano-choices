@@ -1,16 +1,4 @@
-export default {
-  data(){
-    return{
-      id:"q1" // ALTERE AQUI
-    }
-  },
-  methods: {
-    verificaQuestao(event, questao) {
-
-
-      const gabaritoQuestoes = { q1: "a" };
-      let selecionado = event.target.value;
-      let correto = `
+export default{data(){return{id:"q1"}},methods:{verificaQuestao(e,a){e=e.target.value;document.querySelector("#"+a).querySelector(".feedback").innerHTML=e==={q1:"a"}[a]?`
         <div class="question-result question-result__correto">
         <img src="src/img/gif-06.webp" alt="correto">
         <p class="body1 flex--align-center">
@@ -18,31 +6,14 @@ export default {
           <span class="material-symbols-rounded ml-16 mb-4">sentiment_very_satisfied</span>
         </p>
       </div>
-      `;
-      let incorreto = `
+      `:`
         <div class="question-result question-result__incorreto">
           <p class="body1 flex--align-center">
              <span class="material-symbols-rounded mx-16">sentiment_very_dissatisfied</span>
             <b>Ops! Tente novamente</b>
           </p>
         </div>
-      `;
-
-      if (selecionado === gabaritoQuestoes[questao]) {
-        document
-          .querySelector("#" + questao)
-          .querySelector(".feedback").innerHTML = correto;
-      } else {
-        document
-          .querySelector("#" + questao)
-          .querySelector(".feedback").innerHTML = incorreto;
-      }
-    },
-  },
-
-
-  template:   //html
-`
+      `}},template:`
   <!-- Question 1 -->
   <div class="question question--radio" :id="[id]">
     <p class="body1 mt-2">
@@ -76,5 +47,4 @@ export default {
     <div class="feedback"></div>
   </div>
 
-  `,
-};
+  `};

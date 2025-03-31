@@ -1,34 +1,4 @@
-export default {
-  data() {
-    return {
-      opcoes: [
-        "Boca",
-        "Esôfago",
-        "Estômago",
-        "Faringe",
-        "Intestino delgado",
-        "Intestino grosso",
-      ],
-      respostaCorreta: [
-        "Boca",
-        "Faringe",
-        "Esôfago",
-        "Estômago",
-        "Intestino delgado",
-        "Intestino grosso",
-      ],
-      revelado: false,
-    };
-  },
-  methods: {
-    revelarResposta() {
-      this.revelado = !this.revelado;
-    },
-  },
-
-  
-  template: //html
-   `
+export default{data(){return{opcoes:["Boca","Esôfago","Estômago","Faringe","Intestino delgado","Intestino grosso"],respostaCorreta:["Boca","Faringe","Esôfago","Estômago","Intestino delgado","Intestino grosso"],revelado:!1}},methods:{revelarResposta(){this.revelado=!this.revelado}},template:`
    <div class="question-in-order">
    <div class="row">
       <div class="col m12 s12">
@@ -72,5 +42,4 @@ export default {
    </div>
  </div>
 
-  `,
-};
+  `};
